@@ -1,4 +1,3 @@
-
 'use client'
 
 import React from 'react'
@@ -28,7 +27,6 @@ const HeaderComponent = ({ header }: { header: Header }) => {
         </Link>
 
         <HeaderNav header={header} />
-
       </Gutter>
     </nav>
   )

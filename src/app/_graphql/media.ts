@@ -10,3 +10,4 @@ caption
 export const MEDIA = `media {
   ${MEDIA_FIELDS}
 }`
+

@@ -9,53 +9,86 @@
     @include small-break {
         grid-template-columns: 1fr;
     }
-}
 
-.title {
-    font-weight: 400;
-}
 
-.textBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
-}
+    .title {
+        font-weight: 400;
+    }
 
-.image {
-    min-height: 500px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    .textBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
 
-.dealBtn {
-    width: fit-content;
+    .slideshow-container {
+        position: relative;
+        max-width: 100%;
 
-    @include mid-break {
+        .image {
+            margin: 0;
+            padding: 0;
+            min-height: 500px;
+            border-radius: 5px;
+        }
+
+        .slide {
+            display: none;
+            width: 50%;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        .fade {
+            animation: fade 6s ease-in-out infinite;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+
+    .dealBtn {
+        width: fit-content;
+
+        @include mid-break {
+            width: 100%;
+        }
+    }
+
+    .stats {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 100px);
+
+        @include large-break {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .statBox {
+        border-radius: 10px;
+        border: 1px solid var(--color-dark-60);
+        padding: 16px;
+        min-width: 100px;
         width: 100%;
-    }
-}
+        text-align: center;
 
-.stats {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(4, 100px);
-
-    @include large-break {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-.statBox {
-    border-radius: 10px;
-    border: 1px solid var(--color-dark-60);
-    padding: 16px;
-    min-width: 100px;
-    width: 100%;
-    text-align: center;
-
-    h4 {
-        font-weight: bold;
+        h4 {
+            font-weight: bold;
+        }
     }
 }

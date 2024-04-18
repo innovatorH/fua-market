@@ -50,10 +50,10 @@ export const ThemeProvider: React.FC<{ children?: React.ReactNode }> = ({ childr
   }, [])
 
   return (
-    <ThemeContext.Provider 
-      value={{ 
-        theme: defaultTheme, 
-        setTheme 
+    <ThemeContext.Provider
+      value={{
+        theme: defaultTheme,
+        setTheme,
       }}
     >
       {children}

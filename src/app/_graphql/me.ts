@@ -12,4 +12,3 @@ export const ME_QUERY = `query {
     exp
   }
 }`
-

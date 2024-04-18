@@ -86,5 +86,5 @@ export async function generateMetadata(): Promise<Metadata> {
     page = staticCart
   }
 
-  return generateMeta({ doc: page } )
+  return generateMeta({ doc: page })
 }

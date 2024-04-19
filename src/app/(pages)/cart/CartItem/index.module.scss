@@ -13,17 +13,19 @@
     min-height: 100px;
     padding: 16px;
     background-color: var(--color-dark-50);
+    border-radius: 15%;
 }
 
 .media {
-    position: relative;
+    position: initial;
     height: 100%;
 }
 
 .image {
-    object-fit: contain;
+    object-fit: cover;
     max-width: 100%;
     aspect-ratio: 1 / 1;
+    border-radius: 15%;
 }
 
 .itemDetails {

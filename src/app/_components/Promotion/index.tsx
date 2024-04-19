@@ -56,9 +56,10 @@ const Promotion = () => {
       </div>
       <div>
         <div className={classes.images_slide}>
-          <img className={classes.image_one_slide}
-src="/admin/ui/promotion_slide/image1.jpg"
-alt="promotion_one"
+          <img
+            className={classes.image_one_slide}
+            src="/admin/ui/promotion_slide/image1.jpg"
+            alt="promotion_one"
           />
         </div>
       </div>

@@ -12,7 +12,7 @@ const Promotion = () => {
   })
 
   const targetDate = new Date()
-  targetDate.setDate(targetDate.getDate() + 5)
+  targetDate.setDate(targetDate.getDate() + 3)
 
   useEffect(() => {
     const timerInterval = setInterval(() => {
@@ -53,17 +53,11 @@ const Promotion = () => {
           <StatBox label="Minutes" value={time.minutes} />
           <StatBox label="Seconds" value={time.seconds} />
         </ul>
-        {/* <div className="slideshow-container">
-          <div className="slide fade">
-            <img src="/admin ui/promotion_slide/image1.png" style={{ width: '100%' }} />
-          </div>
-          <div className="slide fade">
-            <img src="/admin ui/promotion_slide/image2.png" style={{ width: '100%' }} />
-          </div>
-          <div className="slide fade">
-            <img src="/admin ui/promotion_slide/image3.png" style={{ width: '100%' }} />
-          </div>
-        </div> */}
+      </div>
+      <div>
+        <div className={classes.images_slide}>
+          <img className={classes.image_one_slide} src="/admin ui/promotion_slide/image1.jpg" alt="promotion_one" />
+        </div>
       </div>
     </section>
   )
